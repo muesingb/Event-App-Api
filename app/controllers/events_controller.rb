@@ -11,6 +11,7 @@ class EventsController < ApplicationController
 
     def create
         @event = Event.create(event_params)
+        ##Time.at(time from react native).utc
         render json: @event
     end
 
