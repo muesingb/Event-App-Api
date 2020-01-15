@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-  config.hosts << "d2e3241a.ngrok.io.io"
+  config.hosts << ENV['NGROK_URL']
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

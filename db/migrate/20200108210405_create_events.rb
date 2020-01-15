@@ -5,7 +5,8 @@ class CreateEvents < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :name
       t.string :location
-      t.integer :time
+      t.bigint :start_time
+      t.bigint :end_time
       t.string :co_host
       t.string :password
 
