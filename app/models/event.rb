@@ -12,4 +12,9 @@ class Event < ApplicationRecord
         UserEvent.create(attendee: self.creator, event: self)
         true
     end
+    
+    def self.sort_and_filter_events
+        @sorted_events = Event.all.sort_by {|event| event.start_time}
+        @sorted_events.select { |event| event.start_time > (Time.now.to_i*1000)}
+    end
 end

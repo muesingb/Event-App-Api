@@ -1,7 +1,8 @@
 class EventsController < ApplicationController
 
     def index
-        render json: Event.all
+        @sorted_events = Event.sort_and_filter_events
+        render json: @sorted_events
     end
 
     def show
