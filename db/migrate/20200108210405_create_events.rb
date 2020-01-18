@@ -7,6 +7,7 @@ class CreateEvents < ActiveRecord::Migration[6.0]
       t.string :location
       t.bigint :start_time
       t.bigint :end_time
+      t.text :description
       t.string :co_host
       t.string :password
 

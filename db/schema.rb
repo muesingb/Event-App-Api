@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_01_08_210405) do
     t.string "location"
     t.bigint "start_time"
     t.bigint "end_time"
+    t.text "description"
     t.string "co_host"
     t.string "password"
     t.datetime "created_at", precision: 6, null: false

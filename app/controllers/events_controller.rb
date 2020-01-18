@@ -12,15 +12,18 @@ class EventsController < ApplicationController
 
     def create
         puts event_params
-        # @event = Event.create(event_params)
-        #save time in format from native
-        ##Time.at(time from react native).utc
-        # render json: @event
+        @event = Event.create(event_params)
+        if(@event.valid?) 
+            render json: @event
+        else
+            render json: {message: 'could not create Event'}
+        end
+        #saves time in format from native
     end
 
     private
 
     def event_params
-        params.require(:event).permit(:creator_id, :image, :name, :location, :time,:co_host, :password)
+        params.require(:event).permit(:creator_id, :image, :name, :location, :time,:co_host, :password, :start_time, :end_time)
     end
 end
