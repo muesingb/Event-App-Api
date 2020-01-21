@@ -13,6 +13,12 @@ class UserEventsController < ApplicationController
         render json: @user_event
     end
 
+    def destroy
+        @user_event = UserEvent.find_by(event_id: user_events_params[:event_id], attendee_id: user_events_params[:attendee_id])
+        @user_event.destroy
+        render json: @user_event
+    end
+
     private
 
     def user_events_params

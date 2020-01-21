@@ -11,7 +11,6 @@ class EventsController < ApplicationController
     end
 
     def create
-        puts event_params
         @event = Event.create(event_params)
         if(@event.valid?) 
             render json: @event

@@ -7,9 +7,10 @@ class UsersController < ApplicationController
     def show
         @user = User.find(params[:id])
         @sorted_and_filtered_events = @user.sort_and_filter_events
+        @sorted_and_filtered_created_events = @user.created_events.sort_and_filter_events
         ##sort events by date
         ##filter events so past events aren't shown
-        render json: {user: @user, events: @sorted_and_filtered_events, created_events: @user.created_events}
+        render json: {user: @user, events: @sorted_and_filtered_events, created_events: @sorted_and_filtered_created_events}
     end
 
     def create
