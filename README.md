@@ -1,7 +1,7 @@
 # Events
 > Tracks and organizes user created events and event attendees, similar to Facebook events.
 
-DEMO: https://www.youtube.com/watch?v=AVF3dbqKgNQ&feature=youtu.be
+[Watch the Demo](https://www.youtube.com/watch?v=AVF3dbqKgNQ&feature=youtu.be)
 
 <ul>
   <li />Manages event date and times using moment.js, React Native Calendars, and datetimepicker libraries.<br>
