@@ -25,6 +25,8 @@ Technologies:
 ## Further Reading
 I've written a [blog post](https://medium.com/@muesingb/developing-fullstack-react-native-applications-without-a-simulator-e952ab1493d2) about setting up the simulation environement using Expo on a mobile device.
 
+I wrote another [blog post](https://medium.com/@muesingb/tips-for-approaching-domain-modeling-3a290e00bc55) about domain modeling using this as an example.
+
 ## Meta
 
 Barbara Muesing – [LinkedIn](https://www.linkedin.com/in/barbara-muesing) – muesingb@gmail.com
